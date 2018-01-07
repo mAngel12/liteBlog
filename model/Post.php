@@ -92,6 +92,9 @@ class Post {
         $st = $conn->prepare ( "DELETE FROM posts WHERE id = :id LIMIT 1" );
         $st->bindValue( ":id", $this->id, PDO::PARAM_INT );
         $st->execute();
+        $st = $conn->prepare ( "DELETE FROM comments WHERE postid = :postid" );
+        $st->bindValue( ":postid", $this->id, PDO::PARAM_INT );
+        $st->execute();
         $conn = null;
     }
 }
