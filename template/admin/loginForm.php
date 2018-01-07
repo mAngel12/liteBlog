@@ -20,7 +20,7 @@
                             <p><?php echo $results['errorMessage'] ?></p>
                         </div>
                     <?php } ?>
-
+                    
                     <hr class="style">
                     <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" required autofocus="" maxlength="20"/>
                     <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required maxlength="20"/>

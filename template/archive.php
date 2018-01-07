@@ -18,6 +18,7 @@
     
     <p>There <?php echo ( $results['totalRows'] != 1 ) ? 'are' : 'is' ?> <?php echo $results['totalRows']?> post<?php echo ( $results['totalRows'] != 1 ) ? 's' : '' ?> in total.</p>
     <br>
-    <a class="btn btn-default" role="button" href="index.php" >Go to Homepage</a><br><br>
-
+    <div class="mainbutton" >
+        <a class="btn btn-default" role="button" href="index.php" >Go to Homepage</a><br><br>
+    </div>
 <?php include "template/include/footer.php" ?>

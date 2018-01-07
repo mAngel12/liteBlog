@@ -6,9 +6,6 @@
     <h5><span class="glyphicon glyphicon-time"></span> Published on <?php echo date('j F Y', $results['post']->publicationDate)?>.</h5>
     <p style="font-style: italic;"><?php echo htmlspecialchars( $results['post']->summary )?></p>
     <p><?php echo $results['post']->content?></p>
-    <div class="mainbutton" >
-        <a class="btn btn-default" role="button" href="index.php" >Go to Homepage</a>
-    </div>
     <br><hr><br>
     
     <h4><span class="glyphicon glyphicon-comment"></span> Leave a Comment:</h4><br/>

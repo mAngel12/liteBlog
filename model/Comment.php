@@ -94,7 +94,7 @@ class Comment {
         $st->bindValue( ":id", $this->id, PDO::PARAM_INT );
         $st->execute();
         $conn = null;
-    }
-    
-    
+    } 
 }
+
+?>
